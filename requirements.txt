@@ -7,3 +7,5 @@ pyenchant==3.2.2
 pyttsx3==2.98
 tensorflow==2.18.0
 mediapipe==0.10.21
+SpeechRecognition==3.16.1
+pyaudio==0.2.14

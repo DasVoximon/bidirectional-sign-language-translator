@@ -26,6 +26,9 @@ os.environ["THEANO_FLAGS"] = "device=cuda, assert_no_cpu_op=True"
 class Application:
 
     def __init__(self):
+
+        
+        
         # Initializing video capture and loading model
         self.vs = cv2.VideoCapture(0, cv2.CAP_DSHOW)
         self.current_image = None
@@ -117,6 +120,9 @@ class Application:
         self.word2 = " "
         self.word3 = " "
         self.word4 = " "
+
+        from speech_to_sign import add_direction2_button
+        add_direction2_button(self)
 
         # Starting video loop
         self.video_loop()
@@ -787,6 +793,11 @@ class Application:
         cv2.destroyAllWindows()
 
 
-# Start the Application
-print("Starting Application...")
-(Application()).root.mainloop()
+def main():
+    print("Starting Application...")
+    app = Application()
+    app.root.mainloop()
+
+
+if __name__ == "__main__":
+    main()
