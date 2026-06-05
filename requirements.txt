@@ -1,7 +1,7 @@
 cvzone==1.6.1
 keras==3.8.0
 numpy==1.26.4
-opencv-python-headless==4.11.0.86
+opencv-python==4.11.0.86
 pillow==11.1.0
 pyenchant==3.2.2
 pyttsx3==2.98
